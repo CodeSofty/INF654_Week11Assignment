@@ -83,12 +83,12 @@ const gyms = getDocs(collection(db, 'gym')).then((snapshot) => {
     }));
 });
 
-let searchInput = document.querySelector('#search_input').value;
-const q = query(collection(db, 'gym'), where('name', '==', searchInput));
-const querySnapshot = await getDocs(q);
-querySnapshot.forEach((doc) => {
-    console.log(doc.id, doc.data);
-});
+// let searchInput = document.querySelector('#search_input').value;
+// const q = query(collection(db, 'gym'), where('name', '==', searchInput));
+// const querySnapshot = await getDocs(q);
+// querySnapshot.forEach((doc) => {
+//     console.log(doc.id, doc.data);
+// });
 
 
 form.addEventListener(('submit'),(e) => {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <h1>Gyms In Kansas City, MO</h1>
+
+    <p>Create New Item: Simply Fill in the form fields and click "Submit"</p><br>
+    <p>Update Item: Type the new name and address into the form, and then click on the item's content to update it</p><br>
+    <p>Delete: Simply click "Delete"</p><br>
+    <p> Refresh Page To See the Updated Results</p>
+
+    <ul id="gym-list"></ul>
+
+<form id="add-gym-form">  
+    <input type="text" name="name" placeholder="Gym Name">
+    <input type="type" name="address" placeholder="Address">
+    <input type="text" name="search_input" placeholder="Search for name">
+    <button type="submit">ADD GYM</button>
+</form>
+
+
+<script type="module" src="db.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
